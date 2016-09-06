@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testtut]">
+  <test name="testSendEmail(failed)">
+    <classes>
+      <class name="TestTut">
+        <methods>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="BeforeClassTestTut"/>
+          <include name="checkSendingMail" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestTut -->
+      <class name="TestBase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestBase -->
+    </classes>
+  </test> <!-- testSendEmail(failed) -->
+</suite> <!-- Failed suite [testtut] -->
